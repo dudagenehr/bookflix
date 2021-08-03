@@ -1,0 +1,99 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+  background: var(--preta);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container a{
+    font-family:Arial, Helvetica, sans-serif
+}
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover {
+  color: #fff;
+}
+
+/*livro principal*/
+
+.banner {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.15) 100%),
+    url(/img/legendborn.jpg);
+
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.banner .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+.banner .title {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+.button i {
+    margin-right: 8px;
+}
+.container{
+    margin-left: 30px;
+}
+
+.banner .container {
+    width: 70%;
+}
+
+/*OWL CAROUSEL*/
+.box {
+    height:100%;
+    width: 100%;
+    display: block;
+}
+.carousel {
+    margin-top: 5px;
+}
