@@ -1,6 +1,6 @@
 :root {
   --vermelho: #e50914;
-  --preta: #141414;
+  --preto: #141414;
 }
 * {
   margin: 0;
@@ -11,9 +11,10 @@
 /*elementos base*/
 
 body {
-  background: var(--preta);
-  font-family: "Arial", Times, serif;
+  background: var(--preto);
+  font-family: 'Arial', Times, serif;
   color: white;
+  position: relative;
 }
 header .container {
   display: flex;
@@ -21,13 +22,13 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-header .container a{
-    font-family:Arial, Helvetica, sans-serif
+header .container a {
+  font-family: Arial, Helvetica, sans-serif;
 }
 header .logo {
   margin-left: 5px;
   color: var(--vermelho);
-  font-family: "Arial Black", Times;
+  font-family: 'Arial Black', Times;
   font-size: 40px;
 }
 header nav a {
@@ -38,13 +39,48 @@ header nav a {
 header nav a:hover {
   color: #fff;
 }
+.wrapper {
+  position: relative;
+  top: -265px;
+  z-index: 0;
+}
+
+/* Toggle open table content*/
+.invisible {
+  visibility: hidden;
+}
+.table-content {
+  position: relative;
+  z-index: 1;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 50vw;
+  background-color: #e50914;
+  align-items: center;
+}
+.contents h3{
+  padding: 0 15px 15px;
+}
+.bookrecs {
+  display: flex;
+  width: 45vw;
+  height: 30vh;
+  justify-content: space-between;
+
+}
 
 /*livro principal*/
 
 .banner {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.15) 100%),
-    url(/img/legendborn.jpg);
+    url(/bookflix/img/legendborn.jpg);
 
   height: 400px;
   background-size: cover;
@@ -54,14 +90,14 @@ header nav a:hover {
   align-items: flex-start;
 }
 .banner .description {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-family: "Trebuchet MS", Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 .banner .title {
   margin-top: 15%;
   font-size: 40px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 .button {
   background-color: rgba(0, 0, 0, 0.5);
@@ -71,29 +107,29 @@ header nav a:hover {
   margin-right: 15px;
   font-size: 12px;
   cursor: pointer;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 .button:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 .button i {
-    margin-right: 8px;
+  margin-right: 8px;
 }
-.container{
-    margin-left: 30px;
+.container {
+  margin-left: 30px;
 }
 
 .banner .container {
-    width: 70%;
+  width: 70%;
 }
 
 /*OWL CAROUSEL*/
 .box {
-    height:100%;
-    width: 100%;
-    display: block;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 .carousel {
-    margin-top: 5px;
+  margin-top: 5px;
 }
